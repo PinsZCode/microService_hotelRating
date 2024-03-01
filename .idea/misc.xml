@@ -6,7 +6,18 @@
       <list>
         <option value="$PROJECT_DIR$/user/pom.xml" />
         <option value="$PROJECT_DIR$/hotel/pom.xml" />
+        <option value="$PROJECT_DIR$/review/pom.xml" />
+        <option value="$PROJECT_DIR$/rating/pom.xml" />
+        <option value="$PROJECT_DIR$/serviceRegistry/pom.xml" />
+        <option value="$PROJECT_DIR$/ApiGateWay/pom.xml" />
+        <option value="$PROJECT_DIR$/apiGateWay/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ApiGateWay/pom.xml" />
+        <option value="$PROJECT_DIR$/review/pom.xml" />
+      </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>

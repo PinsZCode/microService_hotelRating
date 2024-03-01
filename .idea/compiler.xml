@@ -2,18 +2,31 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user" />
+        <module name="rating" />
+        <module name="apiGateWay" />
         <module name="hotel" />
+        <module name="serviceRegistry" />
+        <module name="user" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ApiGateWay" target="17" />
+      <module name="review" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateWay" options="-parameters" />
+      <module name="apiGateWay" options="-parameters" />
       <module name="hotel" options="-parameters" />
+      <module name="rating" options="-parameters" />
+      <module name="review" options="-parameters" />
+      <module name="serviceRegistry" options="-parameters" />
       <module name="user" options="-parameters" />
     </option>
   </component>

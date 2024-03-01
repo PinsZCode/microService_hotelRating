@@ -1,0 +1,25 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/     # MongoDB connection URI
+      database: rating_db                      # MongoDB database name
+  application:
+    name: RATING-SERVICE                          # Name of your microservice
+#  profiles:
+#    active: dev                                    # Active profile (e.g., dev, prod)
+
+server:
+  port: 8092                                     # Port number for your microservice
+
+#logging:
+#  level:
+#    root: INFO
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true

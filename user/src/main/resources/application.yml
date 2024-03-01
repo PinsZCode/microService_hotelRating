@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: my-application
+    name: User-SERVICE
   datasource:
     url: jdbc:mysql://localhost:3306/user_db
     username: root
@@ -16,9 +16,11 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
 
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:8761/eureka/
-#  instance:
-#    prefer-ip-address: true
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
